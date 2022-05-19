@@ -14,6 +14,7 @@
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
   .spinner__contenedor {
-    height: calc(100vh - 320px);
+    min-height: calc(100vh - 320px);
+    height: 100%;
   }
 }

@@ -1,7 +1,7 @@
 .hero__contenedor {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +162,7 @@
 @media screen and (max-width: 480px) {
   .hero__contenedor {
     min-height: calc(100vh - 320px);
+    height: 100%;
   }
 
   .hero__izquierda h1 {

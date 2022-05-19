@@ -1,5 +1,5 @@
 .login__contenedor {
-  min-height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,6 +94,7 @@
 @media (max-width: 480px) {
   .login__contenedor {
     min-height: calc(100vh - 320px);
+    height: 100%;
   }
 
   .login__formulario {

@@ -1,10 +1,9 @@
 .registro__contenedor {
-  min-height: calc(100vh - 200px);
+  height: calc(100vh - 200px);
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--color-grey);
-  padding: 5rem 0;
 }
 
 .registro__formulario {
@@ -94,6 +93,7 @@
 @media (max-width: 480px) {
   .registro__contenedor {
     min-height: calc(100vh - 320px);
+    height: 100%;
   }
 
   .registro__formulario {
