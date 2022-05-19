@@ -1,0 +1,19 @@
+.spinner__contenedor {
+  height: calc(100vh - 200px);
+  width: 100%;
+  background: var(--color-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner__contenedor img {
+  width: 60px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .spinner__contenedor {
+    height: calc(100vh - 320px);
+  }
+}

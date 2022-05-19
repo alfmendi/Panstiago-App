@@ -1,0 +1,208 @@
+.navbar__contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--color-white);
+  height: 60px;
+}
+
+.navbar__icono {
+  display: none;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__icono:hover,
+.navbar__logo:hover {
+  cursor: pointer;
+}
+
+.navbar__logo span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  transform: translateZ(-100%);
+  display: inline-block;
+  animation: animate 2s infinite;
+  transition: all 0.5s;
+}
+
+.navbar__logo span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.navbar__logo span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.navbar__logo span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.navbar__logo span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.navbar__logo span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.navbar__logo span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.navbar__logo span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.navbar__logo span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.navbar__logo span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+@keyframes animate {
+  0% {
+    color: var(--color-black-1);
+    transform: translateY(0);
+    margin-left: 0;
+  }
+
+  25% {
+    transform: translateY(-15%);
+    margin-left: 10px;
+    text-shadow: 0 15px 5px var(--color-grey);
+  }
+
+  100% {
+    color: var(--color-grey);
+    transform: translateY(0);
+    margin-left: 0;
+  }
+}
+
+.navbar__login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__login button,
+.navbar__login svg {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+  border: 1px solid var(--color-black-1);
+  background: var(--color-white);
+  color: var(--color-black-1);
+  padding: 0.3rem 0.8rem;
+  box-shadow: 0 14px 26px -12px rgb(53 70 92 / 42%),
+    0 4px 23px 0 rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(53 70 92 / 20%);
+}
+
+.navbar__login button:hover,
+.navbar__login svg:hover {
+  cursor: pointer;
+  background: var(--color-black-1);
+  color: var(--color-white);
+  box-shadow: 0 2px 2px 0 rgb(53 70 92 / 14%),
+    0 3px 1px -2px rgb(53 70 92 / 20%), 0 1px 5px 0 rgb(53 70 92 / 12%);
+}
+
+.navbar__login svg {
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.navbar__login h3 {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.navbar__menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__menu__opciones {
+  z-index: 1000;
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  right: 0px;
+  border-radius: 10px;
+  border: 1px solid var(--color-black-1);
+  padding: 1rem;
+  background: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.navbar__menu__opciones button {
+  width: 100%;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .navbar__contenedor {
+    padding: 0.8rem;
+  }
+
+  .navbar__icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    animation: escaladoIcono 2s infinite;
+  }
+
+  .navbar__icono img {
+    width: 100%;
+  }
+
+  @keyframes escaladoIcono {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+  }
+
+  .navbar__logo {
+    display: none;
+  }
+
+  .navbar__login button {
+    font-size: 0.9rem;
+  }
+
+  .navbar__login svg {
+    font-size: 1.8rem;
+  }
+
+  .navbar__login h3 {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+}

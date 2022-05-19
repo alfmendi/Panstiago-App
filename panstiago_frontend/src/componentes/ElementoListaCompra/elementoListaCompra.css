@@ -1,0 +1,123 @@
+.elementoListaCompra__contenedor {
+  position: relative;
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 3px;
+  background: var(--color-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+}
+
+.elementoListaCompra__contenedor img {
+  height: 80px;
+}
+
+.elementoListaCompra__columna-1 {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.elementoListaCompra__contenedor h5 {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--color-black-1);
+  color: var(--color-white);
+  padding: 0 0.2rem;
+  border-radius: 3px;
+}
+
+.elementoListaCompra__contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementoListaCompra__contador button {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1rem;
+  border: 2px solid var(--color-black-1);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementoListaCompra__contador button:hover {
+  cursor: pointer;
+}
+
+.elementoListaCompra__contador span {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 35px;
+  text-align: center;
+}
+
+.elementoListaCompra__columna-2 {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.elementoListaCompra__columna-2 button {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+  border: 1px solid var(--color-black-1);
+  background: var(--color-white);
+  color: var(--color-black-1);
+  padding: 0.3rem 0.8rem;
+  box-shadow: 0 14px 26px -12px rgb(53 70 92 / 42%);
+}
+
+.elementoListaCompra__columna-2 button:hover {
+  cursor: pointer;
+  background: var(--color-black-1);
+  color: var(--color-white);
+  box-shadow: 0 2px 2px 0 rgb(53 70 92 / 14%),
+    0 3px 1px -2px rgb(53 70 92 / 20%), 0 1px 5px 0 rgb(53 70 92 / 12%);
+}
+
+.elementoListaCompra__linea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media screen and (max-width: 768px) {
+  .elementoListaCompra__contenedor {
+    width: 288px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .elementoListaCompra__columna-1 {
+    width: 100%;
+  }
+
+  .elementoListaCompra__columna-2 {
+    width: 100%;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+}

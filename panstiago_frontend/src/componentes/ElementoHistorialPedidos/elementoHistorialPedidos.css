@@ -1,0 +1,97 @@
+.elementoHistorialPedidos__contenedor {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 3px;
+  background: var(--color-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+}
+
+.elementoHistorialPedidos__cliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: space-between;
+  gap: 1rem;
+  border: 1px solid var(--color-black-1);
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.elementoHistorialPedidos__cliente p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elementoHistorialPedidos__cliente p span {
+  width: 110px;
+  background: var(--color-black-1);
+  color: var(--color-white);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  margin-right: 1rem;
+}
+
+.elementoHistorialPedidos__lineaPedido {
+  position: relative;
+  border: 1px solid var(--color-black-1);
+  border-radius: 3px;
+  padding: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+.elementoHistorialPedidos__lineaPedido img {
+  height: 80px;
+}
+
+.elementoHistorialPedidos__lineaPedido__nombre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elementoHistorialPedidos__lineaPedido h5 {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: var(--color-black-1);
+  color: var(--color-white);
+  padding: 0 0.2rem;
+  border-radius: 3px;
+}
+
+.elementoHistorialPedidos__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--color-black-1);
+  border-radius: 3px;
+  padding: 0.5rem;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .elementoHistorialPedidos__cliente p {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.9rem;
+  }
+
+  .elementoHistorialPedidos__lineaPedido__nombre p {
+    font-size: 0.9rem;
+  }
+}

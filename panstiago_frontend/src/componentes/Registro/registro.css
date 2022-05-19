@@ -1,0 +1,107 @@
+.registro__contenedor {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-grey);
+  padding: 5rem 0;
+}
+
+.registro__formulario {
+  position: relative;
+  width: 350px;
+  padding: 60px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+}
+
+.registro__titulo {
+  z-index: 10;
+  position: absolute;
+  margin: 0 auto;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+  color: #fff;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(0 187 212 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.registro__entradas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.registro__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.registro__footer p {
+  color: rgb(123, 128, 154);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.registro__footer a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.registro__boton {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 20px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  transition: 0.3s ease-in-out;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+  box-shadow: rgb(26 115 232 / 15%) 0rem 0.1875rem 0.1875rem 0rem,
+    rgb(26 115 232 / 20%) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgb(26 115 232 / 15%) 0rem 0.0625rem 0.3125rem 0rem;
+}
+
+.registro__boton:hover {
+  box-shadow: rgb(26 115 232 / 40%) 0rem 0.875rem 1.625rem -0.75rem,
+    rgb(26 115 232 / 15%) 0rem 0.25rem 1.4375rem 0rem,
+    rgb(26 115 232 / 20%) 0rem 0.5rem 0.625rem -0.3125rem;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 480px) {
+  .registro__contenedor {
+    min-height: calc(100vh - 320px);
+  }
+
+  .registro__formulario {
+    width: 300px;
+  }
+
+  .registro__titulo {
+    height: 60px;
+    top: -30px;
+  }
+}
