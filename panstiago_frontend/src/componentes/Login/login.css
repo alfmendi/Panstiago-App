@@ -1,5 +1,6 @@
 .login__contenedor {
   height: calc(100vh - 200px);
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@
 .login__formulario {
   position: relative;
   width: 350px;
-  padding: 60px 20px 20px 20px;
+  padding: 40px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,12 +25,12 @@
   z-index: 10;
   position: absolute;
   margin: 0 auto;
-  top: -40px;
+  top: -20px;
   left: 0;
   bottom: 0;
   right: 0;
   width: 90%;
-  height: 80px;
+  height: 40px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -93,8 +94,8 @@
 /* Media Query para dispositivos móviles */
 @media (max-width: 480px) {
   .login__contenedor {
-    min-height: calc(100vh - 320px);
-    height: 100%;
+    height: calc(100vh - 320px);
+    min-height: 350px;
   }
 
   .login__formulario {

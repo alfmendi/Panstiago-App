@@ -1,5 +1,6 @@
 .noExiste__contenedor {
   height: calc(100vh - 200px);
+  min-height: 100px;
   width: 100%;
   background: var(--color-grey);
   display: flex;
@@ -35,7 +36,7 @@
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
   .noExiste__contenedor {
-    min-height: calc(100vh - 320px);
-    height: 100%;
+    height: calc(100vh - 320px);
+    min-height: 100px;
   }
 }

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: calc(100vh - 200px);
+  min-height: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,8 +162,8 @@
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 480px) {
   .hero__contenedor {
-    min-height: calc(100vh - 320px);
-    height: 100%;
+    height: calc(100vh - 320px);
+    min-height: 400px;
   }
 
   .hero__izquierda h1 {
